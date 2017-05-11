@@ -14,9 +14,11 @@ $("#welcome").append(welcomeTemplate(welcomeData));
 
 function populatePage(stuff){
 	//make a div to hold rendered html
+	console.log("stuff", stuff);
+	let obj = {ccakes: stuff};
 	let newDiv = document.createElement("div");
 	console.log("popPage", newDiv, stuff);
-	newDiv.innerHTML = cakeTemplate(stuff);
+	newDiv.innerHTML = cakeTemplate(obj);
 	$("#cake-cards").append(newDiv);
 	eventStuff();
 }
