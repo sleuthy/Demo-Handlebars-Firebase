@@ -1,0 +1,7 @@
+<h2>{{name}}!</h2>
+<p>
+We bake the most delicious cupcakes like
+	{{#each cakeType}}{{cake}} {{topping}}, {{#unless @last}}{{/unless}}{{#if @last}}.
+		{{/if}}
+	{{/each}}
+</p>
